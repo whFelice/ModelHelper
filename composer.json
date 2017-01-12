@@ -1,11 +1,17 @@
 {
   "name": "wh-felice/model-helper",
   "description": "eloquent for laravel",
+  "license": "MIT",
   "authors": [
     {
       "name": "whFelice",
       "email": "hust_yin@163.com"
     }
   ],
-  "require": {}
+  "require": {},
+  "extra": {
+    "branch-alias": {
+      "dev-master": "5.1-dev"
+    }
+  }
 }
