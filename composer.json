@@ -1,0 +1,11 @@
+{
+  "name": "whFelice/model-helper",
+  "description": "eloquent for laravel",
+  "authors": [
+    {
+      "name": "whFelice",
+      "email": "hust_yin@163.com"
+    }
+  ],
+  "require": {}
+}
