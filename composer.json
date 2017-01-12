@@ -11,7 +11,7 @@
   "require": {},
   "extra": {
     "branch-alias": {
-      "dev-master": "5.1-dev"
+      "dev-master": "v1.0"
     }
   }
 }
