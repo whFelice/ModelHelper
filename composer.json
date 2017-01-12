@@ -8,10 +8,5 @@
       "email": "hust_yin@163.com"
     }
   ],
-  "require": {},
-  "extra": {
-    "branch-alias": {
-      "dev-master": "v1.0-dev"
-    }
-  }
+  "require": {}
 }
