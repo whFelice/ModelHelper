@@ -9,7 +9,7 @@ namespace whFelice\ModelHelper;
 
 use Illuminate\Database\Eloquent\Model as EloquentModel;
 
-abstract class Model extends EloquentModel
+abstract class ModelHelper extends EloquentModel
 {
     public function __construct(array $attributes)
     {
