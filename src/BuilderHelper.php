@@ -5,7 +5,7 @@
  * Time: 12:57
  */
 
-namespace whFelice\ModelHelper;
+namespace WhFelice\ModelHelper;
 
 
 use Illuminate\Database\Eloquent\Builder;

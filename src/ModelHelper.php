@@ -5,7 +5,7 @@
  * Time: 9:23
  */
 
-namespace whFelice\ModelHelper;
+namespace WhFelice\ModelHelper;
 
 use Illuminate\Database\Eloquent\Model as EloquentModel;
 

@@ -5,7 +5,7 @@
  * Date: 2017/1/12
  * Time: 10:12
  */
-namespace whFelice\ModelHelper;
+namespace WhFelice\ModelHelper;
 
 class ModelHelperServiceProvider
 {
