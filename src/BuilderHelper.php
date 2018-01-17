@@ -44,7 +44,11 @@ class BuilderHelper extends Builder
                             break;
                         case 'between':
                             $query->whereBetween($key,$value[1]);
+                        default:
+                            $query->where($key,$value[0],$value[1]);
                     }
+                }else{
+                    $query->where($key,'=',$value);
                 }
             }
         });
