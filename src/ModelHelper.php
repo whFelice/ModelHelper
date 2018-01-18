@@ -20,4 +20,16 @@ abstract class ModelHelper extends EloquentModel
     {
         return new BuilderHelper($query);
     }
+
+    public function saveInfo($saveArr)
+    {
+        if(!empty($saveArr[$this->primaryKey])){
+            $this->exists = true;
+            $keyArr[$this->primaryKey] = $saveArr[$this->primaryKey];
+            //只同步主键到original attributes，用作更新时主键
+            $this->setRawAttributes($keyArr,true);
+        }
+        $this->fill($saveArr);
+        return parent::save();
+    }
 }
