@@ -66,4 +66,13 @@ class BuilderHelper extends Builder
     {
         return $this->find($id);
     }
+
+    public function findOne(array $where, $orderBy = [])
+    {
+        $this->formatWhere($where);
+        if (!empty($orderBy)) {
+            $this->formatOrderBy($orderBy);
+        }
+        return $this->first();
+    }
 }
