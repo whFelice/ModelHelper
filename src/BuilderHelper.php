@@ -54,16 +54,17 @@ class BuilderHelper extends Builder
         });
     }
 
-    public function formatOrderBy($orderBy=[])
+    public function formatOrderBy($orderBy)
     {
-        return $this->orderBy(function($query) use ($orderBy){
-            foreach($orderBy as $key=>$value){
-                if(!in_array($value,['asc','desc'])){
+        if (is_array($orderBy)) {
+            foreach ($orderBy as $key => $value) {
+                if ( strtolower($value) !== 'desc' && strtolower($value) !== 'asc') {
                     continue;
                 }
-                $query->orderby($key,$value);
+                $this->orderBy($key, $value);
             }
-        });
+        }
+        return $this;
     }
 
     public function getOne($id)
